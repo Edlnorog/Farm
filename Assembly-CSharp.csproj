@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Main.cs" />
     <Compile Include="Assets\Script\Run.cs" />
+    <Compile Include="Assets\Script\Building.cs" />
+    <Compile Include="Assets\Script\BuildingGrid.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Farming Asset Pack\NOTES.txt" />

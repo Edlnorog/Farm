@@ -1,10 +1,10 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
 OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 16313 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2021.3.10f1\Editor\Unity.exe
+D:\Unity\2021.3.11f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,7 +15,7 @@ D:/Farm
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-60799
+50130
 Successfully changed project path to: D:/Farm
 D:/Farm
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,10 +47,10 @@ D:/Farm
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 99.58 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 92.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
-[Subsystems] Discovering subsystems at path D:/Unity/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path D:/Unity/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Farm/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
@@ -60,81 +60,78 @@ Direct3D:
     VRAM:     5958 MB
     Driver:   31.0.15.2698
 Initialize mono
-Mono path[0] = 'D:/Unity/2021.3.10f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Mono path[0] = 'D:/Unity/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: D:/Unity/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003430 seconds.
+Register platform support module: D:/Unity/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002386 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 92.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 89.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.733 seconds
+- Completed reload, in  0.602 seconds
 Domain Reload Profiling:
-	ReloadAssembly (734ms)
-		BeginReloadAssembly (106ms)
+	ReloadAssembly (603ms)
+		BeginReloadAssembly (70ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (520ms)
-			LoadAssemblies (106ms)
+		EndReloadAssembly (435ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (143ms)
+			SetupTypeCache (96ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (302ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (267ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (54ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (93ms)
+				RefreshPlugins (89ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (103ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (43ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005744 seconds.
+Registered in 0.005157 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Farm\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Farm\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 98.80 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 119.17 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.314 seconds
+- Completed reload, in  1.163 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1315ms)
-		BeginReloadAssembly (227ms)
+	ReloadAssembly (1163ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (125ms)
-		EndReloadAssembly (970ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (944ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
+			SetupTypeCache (232ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (494ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (478ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (238ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				RefreshPlugins (119ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -142,13 +139,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (56.5 KB). Loaded Objects now: 4528.
+Unloading 38 unused Assets / (56.5 KB). Loaded Objects now: 4526.
 Memory consumption went from 151.3 MB to 151.3 MB.
-Total: 5.590400 ms (FindLiveObjects: 0.849100 ms CreateObjectMapping: 0.167600 ms MarkObjects: 4.418500 ms  DeleteObjects: 0.153700 ms)
+Total: 3.586700 ms (FindLiveObjects: 0.420900 ms CreateObjectMapping: 0.112200 ms MarkObjects: 2.972300 ms  DeleteObjects: 0.080400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,59 +159,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 76507.380949 seconds.
-  path: Assets/Farming Asset Pack/pixil-frame-0 (2)_cut-photo.ru.png
-  artifactKey: Guid(6bbdb6d56cc72ad409ae50d78a7618fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/pixil-frame-0 (2)_cut-photo.ru.png using Guid(6bbdb6d56cc72ad409ae50d78a7618fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b502ee8ec3331f98df560d4643417a0') in 0.153669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Farming Asset Pack/farming-water.png
-  artifactKey: Guid(548079c1be946ba439b4d76b2085ea31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/farming-water.png using Guid(548079c1be946ba439b4d76b2085ea31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dea4d1059c05a84e5749f397c6c0151') in 0.119095 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Farming Asset Pack/farming-tileset_cut-photo.ru (1).png
-  artifactKey: Guid(fe5f1cc34b7ca8c43bb8fa090c1ab78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/farming-tileset_cut-photo.ru (1).png using Guid(fe5f1cc34b7ca8c43bb8fa090c1ab78b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec04aac632cdeadff2311ce11bd2c97b') in 0.022897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Farming Asset Pack/farming-tileset_cut-photo.ru (2).png
-  artifactKey: Guid(010d0d9bb1f417d478f740f78af56b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/farming-tileset_cut-photo.ru (2).png using Guid(010d0d9bb1f417d478f740f78af56b14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82730fbb7d1646797002fdf9bd0e7de1') in 0.012856 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Farming Asset Pack/farming-houses.png
-  artifactKey: Guid(037b2d58280f32e459042d7c4740d028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/farming-houses.png using Guid(037b2d58280f32e459042d7c4740d028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1cd18f092c6cd98782d0b2b5ac5b5e') in 0.057745 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Farming Asset Pack
-  artifactKey: Guid(eeb92cdf0ca437d439848cb65f1f9072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack using Guid(eeb92cdf0ca437d439848cb65f1f9072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4bbb7d282c848bdcebffd33a370faa') in 0.001595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Farming Asset Pack/Grass.png
-  artifactKey: Guid(6f650f157ad5b934e81b2d2c572a8565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/Grass.png using Guid(6f650f157ad5b934e81b2d2c572a8565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d951e6bb2a3087fd35029f090945141') in 0.011063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Farming Asset Pack/Ground.png
-  artifactKey: Guid(d15af6e907e18e1489e5f8511e9d9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/Ground.png using Guid(d15af6e907e18e1489e5f8511e9d9381) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43a691fdf66ccb816d92689e8e3121a') in 0.024132 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Farming Asset Pack/farming-emotions.png
-  artifactKey: Guid(377d0838804322045b60e51d883c3c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Farming Asset Pack/farming-emotions.png using Guid(377d0838804322045b60e51d883c3c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ede6ef536fbf1556b86b9ea11d9eda7') in 0.042384 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 82197.835746 seconds.
+  path: Assets/pixil-frame-0 (2).png
+  artifactKey: Guid(02fe9a7981dde6041bbe6acf1a8d3e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/pixil-frame-0 (2).png using Guid(02fe9a7981dde6041bbe6acf1a8d3e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287ad16d113445b6cd42cd07cb8d2c48') in 0.154459 seconds 
