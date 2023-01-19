@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class BuildingGrid : MonoBehaviour
 {
-    public Vector2Int GridSize = new Vector2Int(10, 10);
     private Building[,] grid;
     private Building flyingBuilding;
     private Camera mainCamera;
-
+    public Vector2Int GridSize = new Vector2Int(10, 10);
     private void Awake()
     {
         grid = new Building[GridSize.x, GridSize.y];
+
         mainCamera = Camera.main;
     }
 
@@ -19,10 +20,12 @@ public class BuildingGrid : MonoBehaviour
     {
         if (flyingBuilding != null)
         {
-            Destroy(flyingBuilding);
+            Destroy(flyingBuilding.gameObject);
         }
+
         flyingBuilding = Instantiate(buildingPrefab);
     }
+
     private void Update()
     {
         if (flyingBuilding != null)
@@ -32,12 +35,13 @@ public class BuildingGrid : MonoBehaviour
 
             if (groundPlane.Raycast(ray, out float position))
             {
-                Vector3 worldPosition = ray.GetPoint(position);
+            Vector3 worldPosition = ray.GetPoint(position);
 
-                flyingBuilding.transform.position = worldPosition;
+            flyingBuilding.transform.position = worldPosition;
             }
         }
     }
+    
 
 
 }
