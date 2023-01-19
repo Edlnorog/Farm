@@ -12,11 +12,12 @@ public class BuildingGrid : MonoBehaviour
     private void Awake()
     {
         grid = new Building[GridSize.x, GridSize.y];
+        mainCamera = Camera.main;
     }
 
     public void StartPlacingBuilding(Building buildingPrefab)
     {
-        if (flyingBuilding !=null)
+        if (flyingBuilding != null)
         {
             Destroy(flyingBuilding);
         }
@@ -26,7 +27,7 @@ public class BuildingGrid : MonoBehaviour
     {
         if (flyingBuilding != null)
         {
-            var groundPlane = new Plane(Vector3.up,Vector3.zero);
+            var groundPlane = new Plane(Vector3.up, Vector3.zero);
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
 
             if (groundPlane.Raycast(ray, out float position))
