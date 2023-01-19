@@ -18,7 +18,7 @@ using UnityEditor.PackageManager;
 
 public class NewBehaviourScript : MonoBehaviour
 { 
-    public Building buildingToPlace;
+    public GameObject buildingToPlace;
     private float posx,posy;
     
     //GameObject.FindWithTag("Player").tarnsorm.position 
