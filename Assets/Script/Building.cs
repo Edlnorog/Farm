@@ -1,22 +1,27 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
 public class Building : MonoBehaviour
 {
-    public Vector2Int Size = Vector2Int.one;
+    public GameObject buildingToPlace;
+    private float posx, posy;
 
-
-    public void OnDrawGizmosSelected()
+    //GameObject.FindWithTag("Player").tarnsorm.position 
+    public void build()
     {
-        for (int x = 0; x < Size.x; x++)
-        {
-            for (int y = 0; y < Size.y; y++)
-            {
-                if ((x+y)%2==0) Gizmos.color = new Color(0.88f, 0f, 1f, 0.3f);
-                else Gizmos.color = new Color(0.18f, 0f, 1f, 0.3f);
-                Gizmos.DrawCube(transform.position + new Vector3(x, y, 0), new Vector3(1, 1f, 1));
-            }
-        }
+        posx = GameObject.FindWithTag("Player").transform.position.x-0.5f;
+        posy = GameObject.FindWithTag("Player").transform.position.y;
+        Instantiate(buildingToPlace, new Vector3(posx, posy, 0), Quaternion.identity);
+        
+
+
+
+
+
     }
-}
+}    
