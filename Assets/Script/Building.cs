@@ -12,53 +12,31 @@ public class Building : MonoBehaviour
     public GameObject buildingToPlace;
     private float posx, posy;
     public float[] xm=new float[100] , ym=new float[100] ;
-    private static int f=0;
+    private static int f=0,k=0;
     private static float okr,okri;
-   
-
+    public GameObject[] gg;
+    //Instantiate(buildingToPlace, new Vector3(posx - 0.3f, posy, 0), Quaternion.identity);
+    //Instantiate(buildingToPlace, new Vector3(posx + 0.3f, posy, 0), Quaternion.identity);
     //GameObject.FindWithTag("Player").tarnsorm.position 
-    private void Start()
+    void Start()
     {
         //Console.WriteLine(DateTime.Now.ToString("HH:mm:ss")); //Выводим только время
+        
         
     }
     public void build()
     {
         posx = GameObject.FindWithTag("Player").transform.position.x;
         posy = GameObject.FindWithTag("Player").transform.position.y;
-        
-        
+        gg = GameObject.FindGameObjectsWithTag("Finish");
 
-        for (int i = 0; i < xm.Length; i++)
-        {
-            if (Math.Abs(posx - xm[i]) < 0.3f & xm[i]!=0)
-            {
-                f = 1; 
-                break;
-            }
-        }
+
+        
 
         if (Run.px < 0)
         {
             
-            if (f != 1)
-            {
-                for (int i = 0; i < xm.Length; i++)
-                {
-                    Instantiate(buildingToPlace, new Vector3(posx - 0.3f, posy, 0), Quaternion.identity);
-                    if (xm[i] == 0)
-                    {
-                        
-                        xm[i] = posx + 0.3f;
-                        ym[i] = posy + 0.3f;
-                        break;
-                        
-                    }
-                 
-                }
-                
-            }
-        
+            
             
                 
         }
@@ -66,29 +44,12 @@ public class Building : MonoBehaviour
         if (Run.px > 0)
         {
 
-            if (f != 1)
-            {
-
-                for (int i = 0; i < xm.Length; i++)
-                {
-                    Instantiate(buildingToPlace, new Vector3(posx + 0.3f, posy, 0), Quaternion.identity);
-                    if (xm[i] == 0)
-                    {
-
-                        xm[i] = posx - 0.3f;
-                        ym[i] = posy - 0.3f;
-                        break;
-
-                    }
-
-                }
-
-            }
-        }        
-        
-        
+            
+        }
+        Debug.Log(gg);
+        k = 0;
         f = 0;
     }
-   
+    
    
 }    
