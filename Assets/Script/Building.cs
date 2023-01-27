@@ -17,7 +17,7 @@ public class Building : MonoBehaviour
     public GameObject closest;
     public GameObject[] gg;
     public string nearest;
-    public Vector3 fff,yu;
+    public Vector3 fff,yu,ui;
     //Instantiate(buildingToPlace, new Vector3(posx - 0.3f, posy, 0), Quaternion.identity);
     //Instantiate(buildingToPlace, new Vector3(posx + 0.3f, posy, 0), Quaternion.identity);
     //GameObject.FindWithTag("Player").tarnsorm.position 
@@ -35,7 +35,7 @@ public class Building : MonoBehaviour
         //GameObject.FindWithTag("Finish").transform.parent = GameObject.FindWithTag("Respawn").transform;
         nearest= Findclothestenemy().name;
         yu = Findclothestenemy().transform.position;
-        Debug.Log(yu);
+        Debug.Log(nearest);
         nearest = null;
 
 
@@ -59,6 +59,7 @@ public class Building : MonoBehaviour
     GameObject Findclothestenemy()
     {
         float distance = Mathf.Infinity;
+        float distance2 = Mathf.Infinity;
         Vector3 position = GameObject.FindWithTag("Player").transform.position;
         foreach (GameObject go in gg)
         {
@@ -71,10 +72,14 @@ public class Building : MonoBehaviour
                 distance= curDistance;
                 fff = closest.transform.position;
             }
+            if (curDistance< distance & distance>distance2) 
+            { 
+                distance2 = curDistance;
+                closest = go;
+            }
         }
         //fff = new closest.transform.position;
-        return closest;
-        
+        return closest;            
     }
-
+    
 }    
