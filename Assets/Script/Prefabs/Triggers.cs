@@ -9,13 +9,13 @@ public class Triggers : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         c++;
-        Debug.Log(c);
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         c--;
         d = c;
-        Debug.Log(c);
+        
     }
     
 }
