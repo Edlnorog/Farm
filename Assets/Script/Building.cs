@@ -35,9 +35,9 @@ public class Building : MonoBehaviour
         //gg = GameObject.FindGameObjectsWithTag("Pot");
         gg = GameObject.FindGameObjectsWithTag("Pot");
         //GameObject.FindWithTag("Finish").transform.parent = GameObject.FindWithTag("Respawn").transform;
-        nearest = Findclothestenemy().name;
-        //yu = Findclothestenemy().transform.position;
-        Debug.Log(nearest);
+        //nearest = Findclothestenemy().name;
+        yu = Findclothestenemy().transform.position;
+        Debug.Log(yu);
         nearest = null;
 
         
@@ -45,17 +45,25 @@ public class Building : MonoBehaviour
         {
             
 
-            
+            if ((Math.Abs(yu.x - posx) > 0.65f)||(Math.Abs(yu.y-posy)>0.5f))
+            {
+                a = Instantiate(buildingToPlace, new Vector3(posx - 0.3f, posy, 0), Quaternion.identity);
+                a.transform.parent = GameObject.FindWithTag("Respawn").transform;
+                a.transform.localScale = new Vector3(1, 1, 1);
+            }
             //Instantiate(buildingToPlace, new Vector3(posx - 0.5f, posy, 0), Quaternion.identity).transform.parent = GameObject.FindWithTag("Respawn").transform;
             //Instantiate(buildingToPlace, new Vector3(posx - 0.5f, posy, 0), Quaternion.identity).transform.localScale=new Vector3(1,1,1);
-            a = Instantiate(buildingToPlace, new Vector3(posx - 0.5f, posy, 0), Quaternion.identity);
-            a.transform.parent = GameObject.FindWithTag("Respawn").transform;
-            a.transform.localScale=new Vector3(1,1,1);
+            
         }
 
         if (Run.px > 0)
         {
-
+            if ((Math.Abs(yu.x - posx) > 0.65f) || (Math.Abs(yu.y - posy) > 0.5f))
+            {
+                a = Instantiate(buildingToPlace, new Vector3(posx + 0.3f, posy, 0), Quaternion.identity);
+                a.transform.parent = GameObject.FindWithTag("Respawn").transform;
+                a.transform.localScale = new Vector3(1, 1, 1);
+            }
 
         }
         Debug.Log(gg);
@@ -66,7 +74,8 @@ public class Building : MonoBehaviour
     GameObject Findclothestenemy()
     {
         float distance = Mathf.Infinity;
-        Vector3 position = GameObject.FindWithTag("Player").transform.position;
+        //Vector3 position = GameObject.FindWithTag("Player").transform.position;
+        Vector3 position = new Vector3(posx, posy, 0);
         foreach (GameObject go in gg)
         {
             Vector3 diff = go.transform.position - position;

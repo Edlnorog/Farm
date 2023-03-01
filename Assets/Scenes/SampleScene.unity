@@ -1193,7 +1193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08a38bf86e9558469728607b7a17d32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingToPlace: {fileID: 3421020674728044042, guid: 1258fd961ca28a24f865a99354650269, type: 3}
+  buildingToPlace: {fileID: 2652059194585691709, guid: 23098643010e40c41ac189c23d759846, type: 3}
   xm:
   - 0
   - 0
